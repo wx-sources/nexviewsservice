@@ -1,0 +1,8 @@
+while true do
+local success, content = pcall(function()
+    return game:HttpGet("https://nexviewsservice.shardweb.app/services/nytherune_hub/start")
+end)
+
+local found = string.match(content or "", "reg") ~= nil
+print("Checking the connection:", found)
+end
