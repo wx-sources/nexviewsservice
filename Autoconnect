@@ -5,4 +5,5 @@ end)
 
 local found = string.match(content or "", "reg") ~= nil
 print("Checking the connection:", found)
+task.wait(240) 
 end
